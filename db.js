@@ -8,8 +8,8 @@ const DB_URI = process.env.NODE_ENV === "test"
 let db = new Client({
     connectionString: DB_URI
     });
-    
-    db.connect();                                 
-      
 
-module.exports = db;        
+
+db.connect();
+
+module.exports = db;
